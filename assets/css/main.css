@@ -283,7 +283,17 @@ p {
   margin: 0 0 2em 0;
 }
 
-
+p.content {
+  -moz-columns: 20em 2;
+  -webkit-columns: 20em 2;
+  -ms-columns: 20em 2;
+  columns: 20em 2;
+  -moz-column-gap: 2em;
+  -webkit-column-gap: 2em;
+  -ms-column-gap: 2em;
+  column-gap: 2em;
+  text-align: justify;
+}
 
 h1,
 h2,
@@ -3462,12 +3472,8 @@ body.is-preload #header.alt .logo {
 }
 
 @media screen and (max-width: 736px) {
-  #nav {
-    display: none;
-  }
-
-  #nav + #main {
-    padding-top: 0;
+    #nav + #main {
+    padding-top: 100px;
   }
 }
 

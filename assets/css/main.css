@@ -188,7 +188,7 @@ html {
 }
 
 body {
-  background-color: #935d8c;
+  background-color: #c81d11;
   background-image: url("images/overlay.png"),
     -moz-linear-gradient(45deg, #e37682 15%, #c81d11 85%);
   background-image: url("images/overlay.png"),
@@ -215,7 +215,7 @@ body.is-preload *:after {
 /* Type */
 
 body {
-  background-color: #935d8c;
+  background-color: #c81d11c;
   color: rgba(255, 255, 255, 0.65);
 }
 
@@ -283,17 +283,7 @@ p {
   margin: 0 0 2em 0;
 }
 
-p.content {
-  -moz-columns: 20em 2;
-  -webkit-columns: 20em 2;
-  -ms-columns: 20em 2;
-  columns: 20em 2;
-  -moz-column-gap: 2em;
-  -webkit-column-gap: 2em;
-  -ms-column-gap: 2em;
-  column-gap: 2em;
-  text-align: justify;
-}
+
 
 h1,
 h2,
@@ -2274,7 +2264,7 @@ select {
 
 select option {
   color: #ffffff;
-  background: #935d8c;
+  background: #c81d11;
 }
 
 input[type="checkbox"] + label,
@@ -2292,7 +2282,7 @@ input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #935d8c;
+  color: #c81d11;
 }
 
 input[type="checkbox"]:focus + label:before,
@@ -3069,6 +3059,47 @@ table.alt tbody tr td {
 
 /* Spotlight */
 
+.spotlight2 {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin: 0 0 2em 0;
+}
+
+.spotlight2 .content {
+  -moz-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.spotlight2 .content > :last-child {
+  margin-bottom: 0;
+}
+
+.spotlight2 .content header.major {
+  margin: 0 0 2em 0;
+}
+
+.spotlight2 .image {
+  display: inline-block;
+  margin-left: 4em;
+  padding: 0.65em;
+  border-radius: 100%;
+  border: solid 1px;
+}
+
+.spotlight2 .image img {
+  display: block;
+  border-radius: 100%;
+  width: 16em;
+}
+
 .spotlight {
   display: -moz-flex;
   display: -webkit-flex;
@@ -3099,15 +3130,28 @@ table.alt tbody tr td {
 .spotlight .image {
   display: inline-block;
   margin-left: 4em;
-  padding: 0.65em;
+  padding: 0em;
   border-radius: 100%;
-  border: solid 1px;
+  border: solid 0px;
 }
 
 .spotlight .image img {
   display: block;
-  border-radius: 100%;
-  width: 16em;
+  border-radius: 0%;
+  width: 350px;
+}
+
+.equipo .image {
+    display: inline-block;
+    position: relative;
+    border-radius: 100%;
+    padding: 0.65em;
+    border: solid 1px;
+}
+
+.equipo .image img {
+    border-radius: 100%;
+    display: block;
 }
 
 @media screen and (max-width: 980px) {

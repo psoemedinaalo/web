@@ -55,7 +55,7 @@
 						<br>
 												<br>
 																		<br>				<a href="images/programa/01s.jpg" target="_blank">
-																		<img src="images/programa/01s.jpg" width="30%">
+																		<img src="images/programa/01s.jpg" width="45%">
 																</a></details>
 
 						<br><details><summary><b>COHOUSING </b></summary>
@@ -65,7 +65,7 @@
 							<br>Creemos que es indispensable para la salud integral ofrecer actividades que movilicen a la ciudadanía para su autocuidado desde atención temprana, talleres ocupacionales y prácticas de innovación social hasta la promoción de la convivencia, excursiones, huertos urbanos, etc.
 						<br><br>
 																						<br>				<a href="images/programa/03s.jpg" target="_blank">
-																		<img src="images/programa/03s.jpg" width="30%">
+																		<img src="images/programa/03s.jpg" width="45%">
 																</a></details>
 
 						<br><details><summary><b>Unidades de atención ciudadana.</b></summary>
@@ -73,14 +73,14 @@
 <br>
 						<br>
 												<br>				<a href="images/programa/02s.jpg" target="_blank">
-												<img src="images/programa/02s.jpg" width="30%">
+												<img src="images/programa/02s.jpg" width="45%">
 										</a></details>
 						<br><details><summary><b>Proyecto estratégico para prevenir la soledad.</b></summary>
 						<br>La <i>“soledad no deseada”</i>, tanto en jóvenes como en mayores, cuenta con una incidencia creciente con gran repercusión en la salud física y mental. Es necesario crear oportunidades en encuentro interpersonal, facilitar los vínculos den los barrios y fomentar la sensación de pertenencia a través de los Activos de Salud, mapeado para describir recursos informales, personales y simbólicos y a través de herramientas como “mapa emocional”, fotovoz, baraja saludable, el árbol y la diana de evaluación.
 						<br>
 												<br>
 																		<br>				<a href="images/programa/04s.jpg" target="_blank">
-																		<img src="images/programa/04s.jpg" width="30%">
+																		<img src="images/programa/04s.jpg" width="45%">
 																</a></details>
 
 
@@ -190,6 +190,20 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+
+ var detailsList = document.querySelectorAll("details");
+
+		detailsList.forEach(function(details) {
+			details.addEventListener("click", function() {
+				detailsList.forEach(function(item) {
+					if (item !== details) {
+						item.removeAttribute("open");
+					}
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>
